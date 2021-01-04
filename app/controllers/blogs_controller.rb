@@ -33,6 +33,7 @@ class BlogsController < ApplicationController
     redirect_to blogs_path
   end
 
+# Strong Parameters記述
   private
   def blog_params
     params.require(:blog).permit(:title, :category, :body)
